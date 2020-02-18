@@ -10,6 +10,7 @@ export default function(route, auth, storage): void {
     let processing_pkgs = 0;
     let firstPackage = true;
 
+    res.setHeader('Content-Type', 'application/json');
     res.status(200);
 
     /*
